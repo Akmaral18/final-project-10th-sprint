@@ -10,7 +10,7 @@
 mkdir -p ./task/dir1 ./task/dir2 ./task/dir3/dir4
 
 # изменяем текущую директорию на task
-cd path/task
+cd task
 
 # создаём пустой файл task/dir2/empty
 touch task/dir2/empty
@@ -35,7 +35,7 @@ cp -r task/dir2. task/dir3/dir4
 
 # записываем в task/dir1/summary.txt список файлов с расширением *.txt
 # находящихся в task, включая поддиректории
-find task -type f -name "*.txt" > task/dir1/summary.txt
+find . -type f -name "*.txt" > dir1/summary.txt
 
 
 # дописываем в task/dir1/summary.txt содержимое task/dir2/list.txt
